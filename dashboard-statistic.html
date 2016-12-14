@@ -1,0 +1,426 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css"/>
+    <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="css/nouislider.tooltips.css">
+    <link rel="stylesheet" href="css/nouislider.pips.css">
+    <link rel="stylesheet" href="css/fotorama.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mass.css">
+
+</head>
+<body>
+
+<div class="main">
+  <div class="main-slide">
+    <header>
+      <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Morshun<span>.com</span></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="reg_new_object.html">Додати помешкання</a></li>
+          <li><div class="user">
+            <div class="form-group">
+              <select id="sel1">
+                <option>Готель ""Моршинська Вежа"</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+          </div></li>
+        </ul>
+
+      </div>
+    </div>
+    </nav>
+  </header>
+  </div>
+</div>
+
+<div class="tab-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <ul>
+          <li  class="home-li"><a href="dashboard.html"><div class="home-btn"><img src="img/Home-48.png" alt=""></div></a></li>
+          <li ><a href="dashboard-info.html">Детальне інфо</a></li>
+          <li ><a href="dashboard-price.html">Ціни</a></li>
+          <li  class="active"><a href="dashboard-statistic.html">Статистика</a></li>
+          <li ><a href="dashboard-abon.html">Абонплата</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="full">
+<div class="statistic">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="reg-new-object-wrapper-left">
+          <div class="menu">
+             <ul class="tab-menu" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#home" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">
+                  <div class="reg-object-oval-button"><p>1</p></div>Загальна Інформація
+                </a>
+                <div class="square"></div>
+                <div class="square2"></div>
+              </li>
+              <li role="presentation" class=""><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" aria-expanded="false"><div class="reg-object-oval-button"><p>2</p></div>Усі відгуки</a>
+              <div class="square"></div>
+                <div class="square2"></div>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 col-sm-8 col-xs-12">
+        <div class="row">
+          <div class="col-md-1 col-sm-1"></div>
+          <div class="col-md-10 col-sm-10 col-xs-12">
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="home" style="padding-bottom: 30px;">
+                <div class="statistic-container">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                      <div class="statistic-header">
+                        <div class="row">
+                          <div class="col-md-2 col-sm-2"></div>
+                          <div class="col-md-10 col-sm-10 col-xs-12">
+                            <div class="form-group">
+                              <select class="form-control" id="sel1" placeholder="Тип помешкання">
+                                <option>Останній тиждень</option>
+                                <option>Останній місяць</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-2 col-sm-2 col-xs-3">
+                            <div class="statistic-header-text">
+                              <p>від:</p>
+                            </div>
+                          </div>
+                          <div class="col-md-10 col-sm-10 col-xs-9">
+
+                            <div class="form-group">
+                 							<div class='input-group date' id='datetimepicker1'>
+                     						<input type='text' class="form-control" />
+                     							<span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                     								</span>
+                 							</div>
+             								</div>
+                          </div>
+
+                            <div class="col-md-2 col-sm-2 col-xs-3">
+                              <div class="statistic-header-text">
+                                <p>до:</p>
+                              </div>
+                            </div>
+
+                          <div class="col-md-10 col-sm-10 col-xs-9">
+                            <div class="form-group">
+                 							<div class='input-group date' id='datetimepicker2'>
+                     						<input type='text' class="form-control" />
+                     							<span class="input-group-addon"><span class="glyphicon glyphicon-time"></span>
+                     								</span>
+                 							</div>
+             								</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="statistic-body">
+                        <div class="main-statistic">
+
+                  <div class="main-statistic-row">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="main-statistic-text">
+                          <p class="stat-text">
+                            Відгуків:
+                          </p>
+                        </div>
+
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="mark-wraper">
+                      <p>120</p>
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-statistic-row">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="main-statistic-text">
+                          <p class="stat-text">
+                            Переглядів сторінки:
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="mark-wraper">
+                      <p>1488</p>
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-statistic-row">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="main-statistic-text">
+                          <p class="stat-text">
+                            Загальний рейтинг:
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="mark-wraper">
+                      <p>9,5</p>
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="object-btn-wrap">
+        <a href="" class="object-bar-btn">Зберегти</a>
+        </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="profile">
+                <div class="row">
+                  <div class="col-md-1 col-sm-1"></div>
+                  <div class="col-md-10 col-sm-10 col-xs-12">
+                    <div class="admin-content" style="margin-top:100px;">
+                      <div class="last-testiomonials" style="margin-bottom: 70px;">
+                  <div class="main-title" style="padding-top:30px;">
+                    <p>Усі відгуки</p>
+                  </div>
+                  <div class="respond" style="box-shadow:none !important">
+              <div class="respond-title">
+                <p>Міні-готель “Парк”</p>
+              </div>
+              <div class="respond-name">
+                <img src="img/icon16.png" alt="">
+                <p>Олег</p>
+              </div>
+              <div class="respond-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit qui fuga aliquam facere aliquid, voluptate ab sapiente, possimus repellat, veniam, nisi. Sint optio, commodi. Porro delectus quis quas ducimus cum.
+                </p>
+              </div>
+              <div class="respond-date">
+                <img src="img/icon17.png" alt="">
+                <p>08.10.2016</p>
+              </div>
+              <div class="wrap">
+                <div class="mark-wraper">
+                  <p>10</p>
+                </div>
+                </div>
+
+            </div>
+
+            <div class="respond" style="box-shadow:none !important">
+        <div class="respond-title">
+          <p>Міні-готель “Парк”</p>
+        </div>
+        <div class="respond-name">
+          <img src="img/icon16.png" alt="">
+          <p>Олег</p>
+        </div>
+        <div class="respond-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit qui fuga aliquam facere aliquid, voluptate ab sapiente, possimus repellat, veniam, nisi. Sint optio, commodi. Porro delectus quis quas ducimus cum.
+          </p>
+        </div>
+        <div class="respond-date">
+          <img src="img/icon17.png" alt="">
+          <p>08.10.2016</p>
+        </div>
+        <div class="wrap">
+          <div class="mark-wraper">
+            <p>10</p>
+          </div>
+          </div>
+
+      </div>
+      <div class="respond" style="box-shadow:none !important">
+  <div class="respond-title">
+    <p>Міні-готель “Парк”</p>
+  </div>
+  <div class="respond-name">
+    <img src="img/icon16.png" alt="">
+    <p>Олег</p>
+  </div>
+  <div class="respond-text">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit qui fuga aliquam facere aliquid, voluptate ab sapiente, possimus repellat, veniam, nisi. Sint optio, commodi. Porro delectus quis quas ducimus cum.
+    </p>
+  </div>
+  <div class="respond-date">
+    <img src="img/icon17.png" alt="">
+    <p>08.10.2016</p>
+  </div>
+  <div class="wrap">
+    <div class="mark-wraper">
+      <p>10</p>
+    </div>
+    </div>
+
+</div>
+<div class="pagination-wraper">
+          <ul class="pagination">
+            <li><a class="prev" href=""><img src="img/icon13.png" alt=""></a></li>
+            <li><a class="active" href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a class="next" href=""><img src="img/icon14.png" alt=""></a></li>
+          </ul>
+        </div>
+
+                </div>
+                    </div>
+                  </div>
+                  <div class="col-md-1 col-sm-1"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1 col-sm-1"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="first-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 hidden-xs">
+          <div class="logo">
+            <p>Morshun<span>.com</p>
+              </div>
+          </div>
+        <div class="col-md-6 hidden-sm hidden-xs">
+          <div class="navbar">
+            <ul>
+              <li><a href="about.html">Про нас</a></li>
+              <li><a href="news.html">Новини сайту</a></li>
+              <li><a href="partners.html">Партнерам</a></li>
+              <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mobile-center">
+          <div class="social-icons">
+            <div class="icon"><a href=""><img src="img/facebook.png" alt=""></a></div>
+            <div class="icon"><a href=""><img src="img/vk.png" alt=""></a></div>
+            <div class="icon"><a href=""><img src="img/google+.png" alt=""></a></div>
+            <div class="icon"><a href=""><img src="img/instagram.png" alt=""></a></div>
+            <div class="icon"><a href=""><img src="img/twitter.png" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="second-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="left-text">
+            <p>© 2016 Morshun.com</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="right-text">
+            <p>Design built with love by <a href="http://5cube.com.ua/">5/CUBE</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+  <script type="text/javascript" src="js/nouislider.js"></script>
+  <script type="text/javascript" src="js/fotorama.js"></script>
+  <script type="text/javascript" src="js/moment-with-locales.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript">
+  $(function() {
+     // Bootstrap DateTimePicker v4
+     $('#datetimepicker1').datetimepicker({
+           format: 'DD/MM/YYYY'
+     });
+  });
+  $(function() {
+     // Bootstrap DateTimePicker v4
+     $('#datetimepicker2').datetimepicker({
+           format: 'DD/MM/YYYY'
+     });
+  });
+        </script>
+
+
+
+</body>

@@ -1,0 +1,880 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css"/>
+    <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="css/nouislider.tooltips.css">
+    <link rel="stylesheet" href="css/nouislider.pips.css">
+    <link rel="stylesheet" href="css/fotorama.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mass.css">
+
+</head>
+<body>
+
+<div class="main">
+  <div class="main-slide">
+    <header>
+      <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Morshun<span>.com</span></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+          <div class="user ava">
+            <img class="user-wraper" src="https://pp.vk.me/c631426/v631426992/372f8/G48fuCSdwXQ.jpg" alt="">
+            <img src="img/more_user_configuration.png" alt="" class="arrow-user">
+            <div class="user-popover">
+              <ul>
+                <li><a href=""><img src="img/user-profile.png" alt="">Мій Профіль</a></li>
+                <li><a href=""><img src="img/my_settings.png" alt="">Налаштування</a></li>
+                <li><a href=""><img src="img/log-out.png" alt="">Вихід</a></li>
+              </ul>
+            </div>
+          </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="reg_new_person.html">Розмістити оголошення</a></li>
+        </ul>
+
+      </div>
+    </div>
+    </nav>
+  </header>
+  </div>
+</div>
+
+
+<div class="object-wraper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+        <div class="left-side-bar">
+          <a  data-toggle="modal" data-target="#myModal" href="" class="side-bar-btn">Забронювати зараз</a>
+
+          <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Для бронювання помешкання звяжіться з адміністрацією</h4>
+      </div>
+      <div class="modal-body">
+        <div class="main-title">
+                        <p>Контакти</p>
+                      </div>
+        <div class="modal-contact">
+        <img src="img/contacts.png" alt="">
+        <div class="modal-wraper">
+        <p>ФІО: <span>Андрій Герасик Орестович</span></p>
+      </div>
+      </div>
+      <div class="modal-contact">
+      <img src="img/phone-receiver.png" alt="">
+      <div class="modal-wraper">
+      <p>Телефон: <span>+380677911941</span></p>
+    </div>
+    </div>
+    <div class="modal-contact">
+    <img src="img/letter.png" alt="">
+    <div class="modal-wraper">
+    <p>E-mail: <span>morshun@gmail.com</span></p>
+  </div>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="main-btn green-btn" data-dismiss="modal">Відправити e-mail</button>
+        <button type="button" class="main-btn" data-dismiss="modal">Закрити</button>
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="search-bar">
+            <div class="main-title">
+              <p>Пошук</p>
+            </div>
+            <div class="inputs">
+              <div class="input-group">
+                  <input type="text" aria-label="..." placeholder="Назва помешкання">
+              </div>
+              <div class="input-group">
+                  <input type="text" aria-label="..." placeholder="Кількість місць">
+              </div>
+            </div>
+            <div class="hide-search-object">
+            <div class="title">
+              <p>Тип помешкання</p>
+            </div>
+            <div class="select-input">
+              <select id="example-getting-started" multiple="multiple">
+                    <option>1-кімнатна квартира</option>
+                    <option>2-х кімнатна квартира </option>
+                    <option>3 кімнатна квартира</option>
+                    <option>4 кімнатна квартира</option>
+                    <option>Апартаменти</option>
+                    <option>Котедж</option>
+                    <option>Вілла</option>
+                    <option>Студіо</option>
+                    <option>Кімната у квартирі</option>
+                    <option>Кімната у власному будинку</option>
+                    <option>Власний будинок під ключ</option>
+              </select>
+            </div>
+            <div class="title">
+              <p>Ціна</p>
+            </div>
+            <div class="noslider">
+              <div id="slider-tooltips" class="noUi-target noUi-rtl noUi-horizontal">
+              </div>
+              <div class="left-text"><p>100</p></div>
+              <div class="right-text"><p>10000+</p></div>
+            </div>
+            <div class="title">
+              <p>Харчування</p>
+            </div>
+            <div class="select-input">
+              <select id="example-getting-started-2" multiple="multiple">
+                  <option >Самостійно(кухня)</option>
+                              <option >Входить в ціну проживання</option>
+                              <option >За додаткову плату</option>
+              </select>
+            </div>
+            <div class="title">
+              <p>Головні послуги</p>
+            </div>
+            <div class="checkboxes">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test1">
+                              <label for="test1">Басейн</label>
+                            </p>
+
+                            <p>
+                              <input type="checkbox" id="test7">
+                              <label for="test7">Кондеціонер</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test8">
+                              <label for="test8">Інтернет</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test8">
+                              <label for="test8">Опалення</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test8">
+                              <label for="test8">Сушарка для одягу</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test8">
+                              <label for="test8">Праска</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test8">
+                              <label for="test8">Ванна</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test8">
+                              <label for="test8">Душ</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test8">
+                              <label for="test8">Туалет</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test8">
+                              <label for="test8">Телевізор</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test8">
+                              <label for="test8">Телефон</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test8">
+                              <label for="test8">Холодильник</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test8">
+                              <label for="test8">Електрочайник</label>
+                            </p>
+                        </form>
+                        </div>
+                        <div class="title">
+                          <p>Відгуки</p>
+                        </div>
+                        <div class="checkboxes">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test5">
+                              <label for="test5">Найкращі</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test6">
+                              <label for="test6">Середні</label>
+                            </p>
+
+                        </form>
+                        </div>
+                        <div class="title">
+                          <p>Додаткові послуги</p>
+                        </div>
+                        <div class="checkboxes">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test2">
+                              <label for="test2">Прокат велосипедів</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test3">
+                              <label for="test3">Екскурсії</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test4">
+                              <label for="test4">Літній басейн</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test4">
+                              <label for="test4">Прокат лиж</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test4">
+                              <label for="test4">Сейф</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test4">
+                              <label for="test4">Фен</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test4">
+                              <label for="test4">Супутникове ТБ</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test4">
+                              <label for="test4">Кабельне ТБ</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test4">
+                              <label for="test4">Мікрохвильова піч</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test4">
+                              <label for="test4">Балкон</label>
+                            </p>
+
+                        </form>
+                        </div>
+                      </div>
+                        <div class="row">
+                          <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="fix-btn-wraper">
+                              <p><img src="img/btn.png" alt=""> Додатково</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="search-btn"><a href=""><button><img src="img/icon2.png" alt="">Шукати</button></a></div>
+                          </div>
+                        </div>
+          </div>
+          <div class="left-map">
+            <div class="left-map-title">
+              <p>Місце розташування</p>
+            </div>
+
+            <div class="main-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10437.86184034641!2d23.8686401!3d49.1537727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x69cfab1d9f4d416d!2z0JzQvtGA0YjQuNC90YHRjNC60LAg0JLQtdC20LA!5e0!3m2!1suk!2sua!4v1477047634457" width="100%" height="270px" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-8 col-sm-8">
+        <div class="right-side-bar">
+          <div class="middle-container-buttons">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div class="btn-wraper">
+                  <a class="smoothscroll active" href="#main-description">Детальний опис</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="btn-wraper">
+                  <a class="smoothscroll" href="#main-table">Доступні номери</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="btn-wraper">
+                  <a class="smoothscroll" href="#amenities">Зручності</a>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="btn-wraper">
+                  <a class="smoothscroll" href="#testimonials">Останні відгуки</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="hotel">
+            <div class="hotel-title">
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <p>Готель “Моршинська Вежа”<img src="img/icon8.png" alt=""><span>2</span></p>
+                  <a href="">
+                    <div class="hotel-title-icon">
+                      <img src="img/icon9.png" alt="">
+                      <p>Моршин, 50-річчя упа 1А</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                 <div class="hotel-btn-wraper">
+                   <a data-toggle="modal" data-target="#myModal" href="">Забронювати</a>
+                 </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="hotel-img">
+              <div class="fotorama" data-nav="thumbs">
+                <a href="img/slide2.png"><img class="full-width" src="img/slide2.png"></a>
+                <a href="img/slide2.png"><img class="full-width" src="img/slide2.png"></a>
+                <a href="img/slide2.png"><img class="full-width" src="img/slide2.png"></a>
+                <a href="img/slide2.png"><img class="full-width" src="img/slide2.png"></a>
+                <a href="img/slide2.png"><img class="full-width" src="img/slide2.png"></a>
+                <a href="img/slide2.png"><img class="full-width" src="img/slide2.png"></a>
+                <a href="img/slide2.png"><img class="full-width" src="img/slide2.png"></a>
+                <a href="img/slide2.png"><img class="full-width" src="img/slide2.png"></a>
+                <a href="img/slide2.png"><img class="full-width" src="img/slide2.png"></a>
+                <a href="img/slide2.png"><img class="full-width" src="img/slide2.png"></a>
+                <a href="img/slide2.png"><img class="full-width" src="img/slide2.png"></a>
+                <a href="img/slide2.png"><img class="full-width" src="img/slide2.png"></a>
+                <a href="img/slide2.png"><img class="full-width" src="img/slide2.png"></a>
+                <a href="img/slide2.png"><img class="full-width" src="img/slide2.png"></a>
+                <a href="img/slide2.png"><img class="full-width" src="img/slide2.png"></a>
+                <a href="img/slide2.png"><img class="full-width" src="img/slide2.png"></a>
+                <a href="img/slide2.png"><img class="full-width" src="img/slide2.png"></a>
+                <a href="img/slide2.png"><img class="full-width" src="img/slide2.png"></a>
+              </div>
+              <div class="img-footer">
+                <p>Корпус готелю</p>
+              </div>
+              <div class="coment">
+                <div class="name">
+                  <img src="img/user_comment.png" alt="">
+                  <p>Mustafa</p>
+                </div>
+                <div class="coment-text">
+                  <p>очень хороший отель Номер и ванная очень хорошо. Завтрак очень хороший. Цена является доступной</p>
+                </div>
+                <div class="date">
+                  <img src="img/date.png" alt="">
+                  <p>11.07.2016</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-description" id="main-description">
+              <div class="main-title">
+                <p>Детальний опис</p>
+              </div>
+              <div class="main-text">
+                <p>
+                  Готель "Моршинська Вежа" розташований у місті Моршин, за 5 хвилин ходьби від Моршинського бювету. До послуг гостей безкоштовна приватна автостоянка і спа-центр з сауною і масажним кабінетом.<br>
+
+Комфортабельні номери оснащені кондиціонером і супутниковим телебаченням. Окремі ванні кімнати укомплектовані феном та безкоштовними туалетно-косметичними засобами.<br>
+
+В ресторані готелю "Моршинська Вежа" подають страви української кухні. У зонах загального користування безкоштовно надається Wi-Fi.<br>
+
+Піша прогулянка від готелю до залізничного вокзалу Моршина триватиме 4 хвилини. Відстань до аеропорту Івано-Франківська становить 96 км. <br>
+
+Morshynska Vezha Hotel - приймає гостей Booking.com з 20 трав. 2014 <br>
+Номери: 7
+                </p>
+              </div>
+            </div>
+
+
+            <div class="main-table" style="padding-top: 50px;" id="main-table">
+              <div class="main-title">
+                <p>Доступні номери та ціни</p>
+              </div>
+              <table class="table">
+                 <thead>
+                    <tr>
+
+                        <th>Кількість Осіб</th>
+                        <th>Тип номеру</th>
+                        <th>Вартість</th>
+                      </tr>
+                     </thead>
+                      <tbody>
+                         <tr>
+
+                            <td class="colored"><img src="img/icon19.png" alt="">х2</td>
+                            <td>Двомісний номер з
+одним ліжком</td>
+                            <td class="colored">400 грн</td>
+                          </tr>
+                          <tr>
+
+                            <td class="colored"><img src="img/icon19.png" alt="">х4</td>
+                            <td>Люкс</td>
+                            <td class="colored">600 грн</td>
+                          </tr>
+                          <tr>
+
+                            <td class="colored"><img src="img/icon19.png" alt="">х5</td>
+                            <td>Півлюкс</td>
+                            <td class="colored">500 грн</td>
+                          </tr>
+                        </tbody>
+                      </table>
+            </div>
+
+
+
+            <div class="amenities" id="amenities">
+              <div class="main-title">
+                <p>Зручності</p>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <div class="ameniti">
+                    <div class="ameniti-header">
+                      <img src="img/icon-bagaj.png" alt="">
+                      <p>Парковка:</p>
+                    </div>
+                    <div class="ameniti-text">
+                      <p>
+                        - В наявності<br>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="ameniti">
+                    <div class="ameniti-header">
+                      <img src="img/Dining Room-48.png" alt="">
+                      <p>Харчування:</p>
+                    </div>
+                    <div class="ameniti-text">
+                      <p>
+                        - Самостійно(кухня)<br>
+                        - Входить в ціну <br>
+                        - За додаткову плату
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="ameniti">
+                    <div class="ameniti-header">
+                      <img src="img/icon-bagaj.png" alt="">
+                      <p>Інтернет</p>
+                    </div>
+                    <div class="ameniti-text">
+                      <p>
+                        - В наявності<br>
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="amenities">
+              <div class="main-title">
+                <p>Додаткові послуги</p>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <div class="ameniti ameniti-center">
+                    <div class="ameniti-header">
+
+                    </div>
+                    <div class="ameniti-text">
+                      <p><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> - Басейн</p>
+                      <p><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> - Опалення</p>
+                      <p><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> - Сушарка для одягу</p>
+                      <p><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> - Праска</p>
+                      <p><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> - Душ</p>
+                    </div>
+                  </div>
+                  <div class="ameniti">
+                    <div class="ameniti-header">
+
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="ameniti ameniti-center">
+                    <div class="ameniti-header">
+
+                    </div>
+                    <div class="ameniti-text">
+                      <p><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> - Прокат лиж</p>
+                      <p><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> - Сейф</p>
+                      <p><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> - Балкон</p>
+                      <p><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> - Супутникове ТБ</p>
+                      <p><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> - Літній басейн</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+            <div class="testimonials" id="testimonials">
+              <div class="main-title">
+                <p>Останні відгуки</p>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="respond">
+              <div class="respond-title">
+                <p>Міні-готель “Парк”</p>
+              </div>
+              <div class="respond-name">
+                <img src="img/icon16.png" alt="">
+                <p>Олег</p>
+              </div>
+              <div class="respond-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit qui fuga aliquam facere aliquid, voluptate ab sapiente, possimus repellat, veniam, nisi. Sint optio, commodi. Porro delectus quis quas ducimus cum.
+                </p>
+              </div>
+              <div class="respond-date">
+                <img src="img/icon17.png" alt="">
+                <p>08.10.2016</p>
+              </div>
+              <div class="wrap">
+                <div class="mark-wraper">
+                  <p>10</p>
+                </div>
+                </div>
+                <div class="low-link">
+                  <img src="img/icon12.png" alt="">
+                </div>
+            </div>
+
+            <div class="respond">
+              <div class="respond-title">
+                <p>Міні-готель “Парк”</p>
+              </div>
+              <div class="respond-name">
+                <img src="img/icon16.png" alt="">
+                <p>Олег</p>
+              </div>
+              <div class="respond-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit qui fuga aliquam facere aliquid, voluptate ab sapiente, possimus repellat, veniam, nisi. Sint optio, commodi. Porro delectus quis quas ducimus cum.
+                </p>
+              </div>
+              <div class="respond-date">
+                <img src="img/icon17.png" alt="">
+                <p>08.10.2016</p>
+              </div>
+              <div class="wrap">
+                <div class="mark-wraper">
+                  <p>10</p>
+                </div>
+                </div>
+                <div class="low-link">
+                  <img src="img/icon12.png" alt="">
+                </div>
+            </div>
+
+
+
+            <div class="pagination-btn">
+              <a class="main-btn" href="">Усі Відгуки</a>
+            </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="respond">
+              <div class="respond-title">
+                <p>Міні-готель “Парк”</p>
+              </div>
+              <div class="respond-name">
+                <img src="img/icon16.png" alt="">
+                <p>Олег</p>
+              </div>
+              <div class="respond-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit qui fuga aliquam facere aliquid, voluptate ab sapiente, possimus repellat, veniam, nisi. Sint optio, commodi. Porro delectus quis quas ducimus cum.
+                </p>
+              </div>
+              <div class="respond-date">
+                <img src="img/icon17.png" alt="">
+                <p>08.10.2016</p>
+              </div>
+              <div class="wrap">
+                <div class="mark-wraper">
+                  <p>10</p>
+                </div>
+                </div>
+                <div class="low-link">
+                  <img src="img/icon12.png" alt="">
+                </div>
+            </div>
+
+            <div class="respond">
+              <div class="respond-title">
+                <p>Міні-готель “Парк”</p>
+              </div>
+              <div class="respond-name">
+                <img src="img/icon16.png" alt="">
+                <p>Олег</p>
+              </div>
+              <div class="respond-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit qui fuga aliquam facere aliquid, voluptate ab sapiente, possimus repellat, veniam, nisi. Sint optio, commodi. Porro delectus quis quas ducimus cum.
+                </p>
+              </div>
+              <div class="respond-date">
+                <img src="img/icon17.png" alt="">
+                <p>08.10.2016</p>
+              </div>
+              <div class="wrap">
+                <div class="mark-wraper">
+                  <p>10</p>
+                </div>
+                </div>
+                <div class="low-link">
+                  <img src="img/icon12.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="pagination-btn">
+              <button class="main-btn giv-testimonials-btn" type="button" name="button">Залишити відгук</button>
+            </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="giv-testimonials">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-8">
+        <div class="person-register">
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12">
+
+                <div class="row">
+                <div class="col-md-12">
+                  <div class="main-title">
+                    <p>Залишіть відгуки</p>
+                  </div>
+
+                </div>
+
+
+
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                 <div class="reg-new-object-text-wrapper">
+                  <p>Ваша оцінка</p>
+                               <div class="form-group">
+                  <select class="form-control" id="sel1" placeholder="Тип помешкання">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                  </select>
+                </div>
+                </div>
+                <div class="reg-new-object-text-wrapper">
+                  <p>Ваш E-mail</p>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="usr">
+                </div>
+                <div class="reg-new-object-text-wrapper">
+                  <p>Ім'я</p>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="pwd">
+                </div>
+                </div>
+                <div class="col-md-1"></div>
+
+            </div>
+        </div>
+        <div class="row">
+              <div class="col-md-1"></div>
+                <div class="col-md-10">
+                  <div class="person-register-input-wraper">
+                    <div class="form-group">
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-md-1"></div>
+              </div>
+              <div class="register-btn-wrap">
+                      <a href="" class="side-bar-btn">Відправити</a>
+                      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  <div class="first-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 hidden-xs">
+          <div class="logo">
+            <p>Morshun<span>.com</p>
+              </div>
+          </div>
+        <div class="col-md-6 hidden-sm hidden-xs">
+          <div class="navbar">
+            <ul>
+              <li><a href="about.html">Про нас</a></li>
+              <li><a href="news.html">Новини сайту</a></li>
+              <li><a href="partners.html">Партнерам</a></li>
+              <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mobile-center">
+          <div class="social-icons">
+            <div class="icon"><a href=""><img src="img/facebook.png" alt=""></a></div>
+            <div class="icon"><a href=""><img src="img/vk.png" alt=""></a></div>
+            <div class="icon"><a href=""><img src="img/google+.png" alt=""></a></div>
+            <div class="icon"><a href=""><img src="img/instagram.png" alt=""></a></div>
+            <div class="icon"><a href=""><img src="img/twitter.png" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="second-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="left-text">
+            <p>© 2016 Morshun.com</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="right-text">
+            <p>Design built with love by <a href="http://5cube.com.ua/">5/CUBE</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+  <script type="text/javascript" src="js/nouislider.js"></script>
+  <script type="text/javascript" src="js/fotorama.js"></script>
+  <script type="text/javascript" src="js/smoothscroll.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#example-getting-started').multiselect({
+            nonSelectedText: 'Не важливо',
+            nSelectedText: ' - Too many options selected!',
+            numberDisplayed: 3,
+            allSelectedText: 'No option left ...'
+        });
+    });
+
+</script>
+<script>
+$(document).ready(function() {
+    $('#example-getting-started-2').multiselect({
+        nonSelectedText: 'Не важливо',
+        nSelectedText: ' - Too many options selected!',
+        numberDisplayed: 3,
+        allSelectedText: 'No option left ...'
+    });
+});
+</script>
+<script>
+var tooltipSlider = document.getElementById('slider-tooltips');
+
+noUiSlider.create(tooltipSlider, {
+start: [2000, 6500],
+tooltips: [true, true ],
+step: 100,
+connect: true,
+range: {
+  'min': 100,
+  'max': 10000
+}
+});
+</script>
+
+</body>

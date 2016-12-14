@@ -1,0 +1,708 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css"/>
+    <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="css/nouislider.tooltips.css">
+    <link rel="stylesheet" href="css/nouislider.pips.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mass.css">
+
+</head>
+<body>
+
+
+  <div class="main-slide">
+    <header>
+      <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Morshun<span>.com</span></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="reg_new_person.html">Розмістити оголошення</a></li>
+          <li><a href="enter.html"><span><img src="img/icon1.png" alt=""></span>&nbsp Увійти</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 ">
+          <div class="main-title">Cайт пошуку помешкань у Моршині<span> №1</span></div>
+
+          <div class="input-row">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="input-group">
+                  <input type="text" aria-label="..." placeholder="Назва помешкання / Адреса">
+                </div><!-- /input-group -->
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="input-group">
+                  <input type="text" aria-label="..." placeholder="Кількість місць">
+                </div><!-- /input-group -->
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="settings-wraper">
+                  <img src="img/settings.png" alt="">
+
+                </div>
+                <div class="btn-wraper"><a href=""><button><img src="img/icon2.png" alt="">Шукати</button></a></div>
+              </div>
+            </div>
+            <div class="hidden-search">
+              <div class="row">
+                <div class="col-md-12 col-xs-12">
+                  <div class="hidden-search-wraper">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="row-height">
+                        <div class="hidden-search-title">
+                          <p>Тип помешкання</p>
+                        </div>
+                        <div class="select-input">
+                          <select id="example-getting-started" multiple="multiple">
+                              <option>1-кімнатна квартира</option>
+                    <option>2-х кімнатна квартира </option>
+                    <option>3 кімнатна квартира</option>
+                    <option>4 кімнатна квартира</option>
+                    <option>Апартаменти</option>
+                    <option>Котедж</option>
+                    <option>Вілла</option>
+                    <option>Студіо</option>
+                    <option>Кімната у квартирі</option>
+                    <option>Кімната у власному будинку</option>
+                    <option>Власний будинок під ключ</option>
+                          </select>
+                        </div>
+                      </div>
+                        <div class="hidden-search-title second-row-pdd">
+                          <p>Головні послуги</p>
+                        </div>
+                        <div class="checkboxes">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test1" />
+                              <label for="test1">Інтернет</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test2" />
+                              <label for="test2">Автостоянка</label>
+                            </p>
+
+                        </form>
+                        </div>
+                        <div class="hidden-search-title second-row-pdd">
+                          <p>Відгуки</p>
+                        </div>
+                        <div class="checkboxes">
+                          <form action="#">
+                            <p>
+                              <input type="checkbox" id="test5" />
+                              <label for="test5">Найкращі</label>
+                            </p>
+                            <p>
+                              <input type="checkbox" id="test6" />
+                              <label for="test6">Середні</label>
+                            </p>
+
+                        </form>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="row-height">
+                        <div class="hidden-search-title ">
+                          <p>Ціна</p>
+                        </div>
+                        <div class="noslider">
+                          <div id="slider-tooltips" class="noUi-target noUi-rtl noUi-horizontal">
+                          </div>
+                          <div class="left-text"><p>100</p></div>
+                          <div class="right-text"><p>10000+</p></div>
+                        </div>
+                      </div>
+
+                      <div class="hidden-search-title">
+                        <p>Додаткові послуги</p>
+                      </div>
+                      <div class="checkboxes">
+                        <form action="#">
+                          <p>
+                            <input type="checkbox" id="test7">
+                            <label for="test7">Сейф</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="test8">
+                            <label for="test8">Сушарка для одягу</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="test9">
+                            <label for="test9">Праска</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="test10">
+                            <label for="test10">Ванна</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="test11">
+                            <label for="test11">Супутникове ТБ</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="test12">
+                            <label for="test12">Кабельне ТБ</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="test13">
+                            <label for="test13">Телефон</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="test14">
+                            <label for="test14">Електрочайник</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="test15">
+                            <label for="test15">Кухонний посуд</label>
+                          </p>
+                          <p>
+                            <input type="checkbox" id="test16">
+                            <label for="test16">Душ</label>
+                          </p>
+
+
+
+                      </div>
+
+
+                      </div>
+                      <div class="col-md-4">
+                        <div class="row-height">
+                        <div class="hidden-search-title">
+                          <p>Харчування</p>
+                        </div>
+                        <div class="select-input">
+                          <select id="example-getting-started-2" multiple="multiple">
+                              <option >Самостійно(кухня)</option>
+                              <option >Входить в ціну проживання</option>
+                              <option >За додаткову плату</option>
+                          </select>
+                        </div>
+
+                      </div>
+                      <div class="checkboxes last-check-pdd">
+                        <p>
+                          <input type="checkbox" id="test17">
+                          <label for="test17">Туалетно-косметичні засоби</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="test18">
+                          <label for="test18">Душова кабіна</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="test3" />
+                          <label for="test3">Екскурсії</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="test4" />
+                          <label for="test4">Літній басейн</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="test40" />
+                          <label for="test40">Прокат лиж</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="test19">
+                          <label for="test19">Міні-бар</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="test20">
+                          <label for="test20">Холодильник</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="test21">
+                          <label for="test21">Духовка</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="test22">
+                          <label for="test22">Мікрохвильова піч</label>
+                        </p>
+                        <p>
+                          <input type="checkbox" id="test23">
+                          <label for="test23">Балкон</label>
+                        </p>
+</form>
+                      </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrow">
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="middle-container-buttons">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="btn-wraper">
+            <a class="active"><img src="img/icon5.png" alt="">Наші рекомендації</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="btn-wraper">
+            <a><img src="img/icon7.png" alt="">Відстань від центру міста</a>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="btn-wraper">
+            <a ><img src="img/icon6.png" alt="">Спочатку найнижча ціна</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="middle-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-sm-12 colxs-12">
+          <div class="hotel-wraper">
+            <div class="row">
+              <div class="col-md-5 col-sm-4 col-xs-12">
+                  <div class="hotel-img">
+                    <img src="img/slide1.png" alt="">
+                  </div>
+              </div>
+              <div class="col-md-5 col-sm-6 col-xs-8">
+                <div class="middle-body">
+                  <div class="header-title">
+                    <p>Готель “Моршинська Вежа” Готель “Моршинська Вежа”<img src="img/icon8.png" alt=""><span>2</span></p>
+                  </div>
+                  <div class="icons-wraper">
+                    <div class="icon left">
+                      <img src="img/icon9.png" alt=""><p>Моршин, 50-річчя упа 1А</p>
+                    </div>
+                    <div class="icon middle">
+                      <a href="https://www.google.com.ua/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%93%D0%BD%D0%B0%D1%82%D0%B0+%D0%A5%D0%BE%D1%82%D0%BA%D0%B5%D0%B2%D0%B8%D1%87%D0%B0,+6,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/@49.7952745,24.0488403,17z/data=!3m1!4b1!4m5!3m4!1s0x473ae872fcb09181:0x813a6dbb790705ba!8m2!3d49.7952745!4d24.051029?hl=ru"><img src="img/icon10.png" alt=""><p>0.3км від центру</p></a>
+                    </div>
+                    <div class="icon right">
+                      <img src="img/icon11.png" alt=""><p>84 відгуків</p>
+                    </div>
+                    <div class="icon icon-description">
+                      <img src="img/info.png" alt=""><p>Готель "Моршинська Вежа" розташований у місті Моршин... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, qui beatae ipsam delectus molestiae illo, iusto iste nisi tempora aut sint porro, voluptates ducimus commodi, nulla vero obcaecati nobis voluptatum.</p>
+                    </div>
+                  </div>
+                  <div class="price-wraper">
+                    <p>Вартість: <span>від </span><span>600 грн</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-2 col-xs-4">
+                <!---якщо рейтинг менший за 4,99 добавляти класс grey,
+                якщо 5-7,99 клас yellow, якщло більше за 7 лишати без класу зеленим --->
+                <div class="mark-wraper grey">
+                  <p>4,87</p>
+                  <div class="hidden-text">
+                    <p>Середня Оцінка
+                    <span class="arrow-2"></span></p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="object.html"><div class="low-link">
+              <img src="img/icon12.png" alt="">
+            </div></a>
+        </div>
+        <div class="hotel-wraper">
+          <div class="row">
+            <div class="col-md-5 col-sm-4 col-xs-12">
+                <div class="hotel-img">
+                  <img src="img/slide1.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-6 col-xs-8">
+              <div class="middle-body">
+                <div class="header-title">
+                  <p>Готель “Моршинська Вежа”<img src="img/icon8.png" alt=""><span>2</span></p>
+                </div>
+                <div class="icons-wraper">
+                  <div class="icon left">
+                    <img src="img/icon9.png" alt=""><p>Моршин, 50-річчя упа 1А</p>
+                  </div>
+                  <div class="icon middle">
+                    <a href="https://www.google.com.ua/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%93%D0%BD%D0%B0%D1%82%D0%B0+%D0%A5%D0%BE%D1%82%D0%BA%D0%B5%D0%B2%D0%B8%D1%87%D0%B0,+6,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/@49.7952745,24.0488403,17z/data=!3m1!4b1!4m5!3m4!1s0x473ae872fcb09181:0x813a6dbb790705ba!8m2!3d49.7952745!4d24.051029?hl=ru"><img src="img/icon10.png" alt=""><p>0.3км від центру</p></a>
+                  </div>
+                  <div class="icon right">
+                    <img src="img/icon11.png" alt=""><p>84 відгуків</p>
+                  </div>
+                  <div class="icon icon-description">
+                    <img src="img/info.png" alt=""><p>Готель "Моршинська Вежа" розташований у місті Моршин... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, qui beatae ipsam delectus molestiae illo, iusto iste nisi tempora aut sint porro, voluptates ducimus commodi, nulla vero obcaecati nobis voluptatum.</p>
+                  </div>
+                </div>
+                <div class="price-wraper">
+                  <p>Вартість: <span>від </span><span>600 грн</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-4">
+              <!---якщо рейтинг менший за 4,99 добавляти класс grey,
+              якщо 5-7,99 клас yellow, якщло більше за 7 лишати без класу зеленим --->
+              <div class="mark-wraper yellow">
+                <p>6</p>
+                <div class="hidden-text">
+                  <p>Середня Оцінка
+                  <span class="arrow-2"></span></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="object.html"><div class="low-link">
+            <img src="img/icon12.png" alt="">
+          </div></a>
+      </div>
+
+      <div class="hotel-wraper">
+        <div class="row">
+          <div class="col-md-5 col-sm-4 col-xs-12">
+              <div class="hotel-img">
+                <img src="img/slide1.png" alt="">
+              </div>
+          </div>
+          <div class="col-md-5 col-sm-6 col-xs-8">
+            <div class="middle-body">
+              <div class="header-title">
+                <p>Готель “Моршинська Вежа”<img src="img/icon8.png" alt=""><span>2</span></p>
+              </div>
+              <div class="icons-wraper">
+                <div class="icon left">
+                  <img src="img/icon9.png" alt=""><p>Моршин, 50-річчя упа 1А</p>
+                </div>
+                <div class="icon middle">
+                  <a href="https://www.google.com.ua/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%93%D0%BD%D0%B0%D1%82%D0%B0+%D0%A5%D0%BE%D1%82%D0%BA%D0%B5%D0%B2%D0%B8%D1%87%D0%B0,+6,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/@49.7952745,24.0488403,17z/data=!3m1!4b1!4m5!3m4!1s0x473ae872fcb09181:0x813a6dbb790705ba!8m2!3d49.7952745!4d24.051029?hl=ru"><img src="img/icon10.png" alt=""><p>0.3км від центру</p></a>
+                </div>
+                <div class="icon right">
+                  <img src="img/icon11.png" alt=""><p>84 відгуків</p>
+                </div>
+              </div>
+              <div class="price-wraper">
+                <p>Вартість: <span>від </span><span>600 грн</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-2 col-xs-4">
+            <div class="mark-wraper">
+              <p>10</p>
+              <div class="hidden-text">
+                <p>Середня Оцінка
+                <span class="arrow-2"></span></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="object.html"><div class="low-link">
+          <img src="img/icon12.png" alt="">
+        </div></a>
+    </div>
+
+
+
+        <div class="pagination-wraper">
+          <ul class="pagination">
+            <li><a class="prev" href=""><img src="img/icon13.png" alt=""></a></li>
+            <li><a class="active" href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a class="next" href=""><img src="img/icon14.png" alt=""></a></li>
+          </ul>
+        </div>
+        </div>
+        <div class="col-md-1 sm-hidden"></div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <div class="right-side-bar">
+            <div class="title">
+              <p>Також переглядають</p>
+            </div>
+            <div class="right-hotel-wraper">
+              <div class="slide-wraper"><img src="img/icon15.png" alt=""></div>
+              <div class="right-wraper-text">
+                <p>Міні-готель “Парк”</p>
+              </div>
+              <div class="price-wraper">
+                <p>Вартість: <span>від </span><span>600 грн</span></p>
+              </div>
+              <a href="object.html"><div class="low-link">
+              <img src="img/icon12.png" alt="">
+            </div></a>
+            <div class="wrap">
+              <!---якщо рейтинг менший за 4,99 добавляти класс grey,
+              якщо 5-7,99 клас yellow, якщло більше за 7 лишати без класу зеленим --->
+                <div class="mark-wraper">
+                  <p>10</p>
+                </div>
+                </div>
+            </div>
+            <div class="right-hotel-wraper">
+              <div class="slide-wraper"><img src="img/icon15.png" alt=""></div>
+              <div class="right-wraper-text">
+                <p>Міні-готель “Парк”</p>
+              </div>
+              <div class="price-wraper">
+                <p>Вартість: <span>від </span><span>600 грн</span></p>
+              </div>
+              <a href="object.html"><div class="low-link">
+              <img src="img/icon12.png" alt="">
+            </div></a>
+            <div class="wrap">
+                <div class="mark-wraper">
+                  <p>10</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="title">
+              <p>Останні відгуки</p>
+            </div>
+            <div class="respond">
+              <div class="respond-title">
+                <p>Міні-готель “Парк”</p>
+              </div>
+              <div class="respond-name">
+                <img src="img/icon16.png" alt="">
+                <p>Олег</p>
+              </div>
+              <div class="respond-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit qui fuga aliquam facere aliquid, voluptate ab sapiente, possimus repellat, veniam, nisi. Sint optio, commodi. Porro delectus quis quas ducimus cum.
+                </p>
+              </div>
+              <div class="respond-date">
+                <img src="img/icon17.png" alt="">
+                <p>08.10.2016</p>
+              </div>
+              <div class="wrap">
+                <div class="mark-wraper">
+                  <p>10</p>
+                </div>
+                </div>
+                <a href="object.html"><div class="low-link">
+                <div class="low-link">
+                  <img src="img/icon12.png" alt="">
+                </div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="follow">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="title">
+            <img src="img/icon-like_search.png" alt="">
+            <p>Сподобались результати пошуку?<br>
+Отримайте знижку до <span>50%</span> на свою наступну подорож!</p>
+          </div>
+          <div class="follow-row">
+            <div class="row">
+              <div class="col-md-8 col-sm-8">
+                <div class="input-group">
+                  <input type="text" aria-label="..." placeholder="Введіть ваш e-mail">
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="btn-wraper"><a href=""><button><img src="img/icon18.png" alt="">Підписатись</button></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="services-title"><p>Чому наш сервіс?</p></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-4">
+          <div class="services-wraper">
+            <div class="img-wrap">
+              <img src="img/why_our_service_1.png" alt="">
+            </div>
+            <div class="title">
+              <p>Економія часу</p>
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nihil, facilis sint, quam porro cum, esse corrupti blanditiis possimus fuga nobis quis! Aperiam totam, voluptatibus. Facilis aliquid necessitatibus delectus minus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="services-wraper">
+            <div class="img-wrap">
+              <img src="img/why_our_service_2.png" alt="">
+            </div>
+            <div class="title">
+              <p>Лише перевірені особи</p>
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nihil, facilis sint, quam porro cum, esse corrupti blanditiis possimus fuga nobis quis! Aperiam totam, voluptatibus. Facilis aliquid necessitatibus delectus minus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="services-wraper">
+            <div class="img-wrap">
+              <img src="img/why_our_service_3.png" alt="">
+            </div>
+            <div class="title">
+              <p>Зручний у користуванні</p>
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nihil, facilis sint, quam porro cum, esse corrupti blanditiis possimus fuga nobis quis! Aperiam totam, voluptatibus. Facilis aliquid necessitatibus delectus minus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="first-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 hidden-xs">
+          <div class="logo">
+            <p>Morshun<span>.com</p>
+              </div>
+          </div>
+        <div class="col-md-6 hidden-sm hidden-xs">
+          <div class="navbar">
+            <ul>
+              <li><a href="about.html">Про нас</a></li>
+              <li><a href="news.html">Новини сайту</a></li>
+              <li><a href="partners.html">Партнерам</a></li>
+              <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mobile-center">
+          <div class="social-icons">
+            <div class="icon"><a href=""><img src="img/facebook.png" alt=""></a></div>
+            <div class="icon"><a href=""><img src="img/vk.png" alt=""></a></div>
+            <div class="icon"><a href=""><img src="img/google+.png" alt=""></a></div>
+            <div class="icon"><a href=""><img src="img/instagram.png" alt=""></a></div>
+            <div class="icon"><a href=""><img src="img/twitter.png" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="second-footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="left-text">
+            <p>© 2016 Morshun.com</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="right-text">
+            <p>Design built with love by <a href="http://5cube.com.ua/">5/CUBE</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap-multiselect.js"></script>
+  <script type="text/javascript" src="js/nouislider.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#example-getting-started').multiselect({
+            nonSelectedText: 'Не важливо',
+            nSelectedText: ' - Вибрано',
+            numberDisplayed: 3,
+            allSelectedText: 'більше не має опцій ...'
+        });
+    });
+
+</script>
+<script>
+$(document).ready(function() {
+    $('#example-getting-started-2').multiselect({
+        nonSelectedText: 'Не важливо',
+        nSelectedText: ' - Вибрано',
+        numberDisplayed: 3,
+        allSelectedText: 'більше не має опцій ...'
+    });
+});
+</script>
+<script>
+var tooltipSlider = document.getElementById('slider-tooltips');
+
+noUiSlider.create(tooltipSlider, {
+start: [2000, 6500],
+tooltips: [true, true ],
+step: 100,
+connect: true,
+range: {
+  'min': 100,
+  'max': 10000
+}
+});
+</script>
+
+</body>
